@@ -1,4 +1,8 @@
 class GamesController < ApplicationController
+
+  before_action :set_game, only: [:edit,:update, :show, :destroy]
+
+
   def index
     @games = Game.all
 
@@ -59,6 +63,11 @@ class GamesController < ApplicationController
   end
 
   private
+
+  def set_game
+    @game = Game.find(params[:id])
+  end
+
   def game_params
     params.require(:game).permit(:title,:url,:description)
   end
