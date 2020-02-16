@@ -12,8 +12,9 @@
     <td><%= game.id %></td>
     <td><%= game.title%></td>
     <td><%= game.description%></td>
-    <td><%= link_to "edit", edit_game_path(game) %>
-    <td><%= link_to "show", game_path(game)%>
+    <td><%= link_to "edit", edit_game_path(game) %></td>
+    <td><%= link_to "show", game_path(game)%></td>
+    <td><%= link_to "delete", game_path(game), method: :delete, data:{confirm: "are you sure?"} %></td>
   </tr>
 <%end%>
 
