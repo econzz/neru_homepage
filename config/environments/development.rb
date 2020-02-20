@@ -23,7 +23,9 @@ Rails.application.configure do
     }
   else
     config.action_controller.perform_caching = false
-
+    config.public_file_server.headers = {
+      'Cache-Control' => "no-cache"
+    }
     config.cache_store = :null_store
   end
 
