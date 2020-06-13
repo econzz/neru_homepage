@@ -1,7 +1,0 @@
-TEST INDEX
-<br/>
-<%= link_to "game management", games_path%>
-
-<div id="jumbo"></div>
-
-<img src="about.jpg"/>
