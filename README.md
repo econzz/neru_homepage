@@ -1,24 +1,19 @@
-# README
+# Nelson's website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple portfolio website made using ruby on rails 5.2
 
-Things you may want to cover:
+### Ruby version
+2.6.6
 
-* Ruby version
-test
-* System dependencies
+### Rails version
+5.2.0
 
-* Configuration
+### Install dependencies
 
-* Database creation
+Using [Bundler](https://github.com/bundler/bundler) and [Yarn](https://github.com/yarnpkg/yarn):
 
-* Database initialization
+### Initialize the database
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```shell
+rails db:create db:migrate db:seed
+```
